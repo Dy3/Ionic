@@ -1,0 +1,120 @@
+<!--
+  Generated template for the Demo08ListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>demo08-list</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ul>
+    <li>test01</li>
+    <li>test02</li>
+    <li>test03</li>
+  </ul>
+
+  <!--ionic列表的基本用法-->
+  <ion-list>
+    <ion-item>test01</ion-item>
+    <ion-item>test02</ion-item>
+    <ion-item>test03</ion-item>
+  </ion-list>
+
+  <!--ionic list分组实现方式-->
+  <!--<ion-list>-->
+    <ion-item-group>
+        <ion-item-divider>A</ion-item-divider>
+        <ion-item>Apple</ion-item>
+        <ion-item>Activate</ion-item>
+        <ion-item>Angular</ion-item>
+
+        <ion-item-divider>B</ion-item-divider>
+        <ion-item>Bike</ion-item>
+        <ion-item>Bicycle</ion-item>
+    </ion-item-group>
+  <!--</ion-list>-->
+
+  <!--
+    ion-item支持设置列表项中的对齐方式
+    item-start 左边
+    item-end 右边
+
+  -->
+
+  <!--常见的3种列表-icon list-->
+  <ion-list>
+    <ion-item>
+      <ion-icon name="home"></ion-icon>
+      主页
+      <ion-note item-end>首页</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="leaf"></ion-icon>
+      编辑
+    </ion-item>
+  </ion-list>
+
+  <!--常见的3种列表-avatar list-->
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/1.jpg"/>
+      </ion-avatar>
+      <h3>张三</h3>
+      <p>今天的雾霾很大</p> 
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/2.jpg"/>
+      </ion-avatar>
+      <h3>张三</h3>
+      <p>今天的雾霾很大</p> 
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/3.jpg"/>
+      </ion-avatar>
+      <h3>张三</h3>
+      <p>今天的雾霾很大</p> 
+    </ion-item>
+  </ion-list>
+
+  <!--
+    ion-icon ion-avatar ion-thumbnail
+    常见的3种列表-thumbnail list-->
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/1.jpg"/>
+      </ion-thumbnail>
+      <h3>商品1</h3>
+      <p> 商品1的描述信息</p>
+    </ion-item>
+  </ion-list>
+
+  <!--高级：侧滑动列表-->
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+          赵大旭
+      </ion-item>
+      <!--side是指选项按钮显示在item的左边或者右边-->
+      <ion-item-options side="left">
+        <button ion-button
+         color="secondary">关注</button>
+        <button ion-button
+         color="danger">删除</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+
+</ion-content>
